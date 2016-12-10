@@ -1,0 +1,179 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: phylax_plugin_analytics_head\n"
+"POT-Creation-Date: 2016-11-08 21:31+0100\n"
+"PO-Revision-Date: 2016-11-08 21:32+0100\n"
+"Last-Translator: Łukasz Nowicki <jagoo@post.pl>\n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: _e;_;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: analytics_head.php:78
+msgid ""
+"This plugin adds tracking code for <strong>Google Analytics</strong> to your "
+"WordPress site. Unlike other plugins, code is added to the <i>&lt;head&gt;</"
+"i> section, so you can authorize your site in <strong>Google Webmaster "
+"Tools</strong>. Of course you can also move your tracking code into footer."
+msgstr ""
+"Ta wtyczka dodaje kod śledzący usługi <strong>Google Analytics</strong> na "
+"Twoją stronę WordPressa. W odróżnieniu od innych wtyczek, kod jest dodawany "
+"do sekcji <i>&lt;head&gt;</i>, dzięki czemu możesz łatwo autoryzować swoją "
+"stronę w usłudze <strong>Google Webmaster Tools</strong>. Oczywiście jeżeli "
+"zechcesz, możesz kod umieścić na dole strony."
+
+#: inc/admin.php:43
+msgid "Google Analytics Head plugin options"
+msgstr "Google Analytics Head opcje wtyczki"
+
+#: inc/admin.php:91
+msgid "General settings"
+msgstr "Ustalenia ogólne"
+
+#: inc/admin.php:97
+msgid "Google ID"
+msgstr "Google ID"
+
+#: inc/admin.php:104
+msgid "Hiding"
+msgstr "Ukrywanie"
+
+#: inc/admin.php:118
+msgid "Move code"
+msgstr "Przenieś kod"
+
+#: inc/admin.php:126
+msgid "Developer settings"
+msgstr "Ustawienia programisty"
+
+#: inc/admin.php:167
+#, php-format
+msgid ""
+"You feel thankful? You may <a href=\"%s\">buy me a beer or coke</a> if you "
+"wish :)"
+msgstr ""
+"Chcesz mi podziękować? Możesz mi <a href=\"%s\">kupić piwo albo colę</a> "
+"jeśli masz ochotę :)"
+
+#: inc/admin.php:179
+msgid ""
+"Enter your settings below. Note that you must enter valid Google ID code to "
+"make this plugin work!"
+msgstr ""
+"Wprowadź poniżej swoje ustawienia. Pamiętaj, że aby wtyczka mogła działać "
+"musisz podać poprawny kod śledzący Google"
+
+#: inc/admin.php:188
+msgid ""
+"This part is for developers and people who may be interested in plugin "
+"manipulation without touching source code. This is highly recommended way to "
+"do that kind of things."
+msgstr ""
+"Ta część jest dla programistów i ludzi zainteresowanych w modyfikację "
+"wtyczki bez naruszania kodu źródłowego. To najlepsza metoda, aby to zrobić."
+
+#: inc/admin.php:201
+msgid ""
+"Something like UA-XXXXXXXX-X, where X-es are digits. It is your personal "
+"Google Analytics code provided by Google."
+msgstr ""
+"Coś jak UA-XXXXXXXX-X, gdzie X to cyfry. To jest twój osobisty kod Google "
+"Analytics dostarczony przez Google."
+
+#: inc/admin.php:211
+msgid "Hide Google tracking code in the admin area"
+msgstr "Ukryj kod śledzący w panelu administratora"
+
+#: inc/admin.php:223
+msgid "Hide Google tracking code for all logged-in users, anywhere"
+msgstr "Ukryj kod śledzący dla wszystkich zalogowanych użytkowników"
+
+#: inc/admin.php:235
+msgid ""
+"Move Google tracking code to the end of the page instead of the &lt;head&gt; "
+"section."
+msgstr "Przenieś kod śledzący z sekcji &lt;head&gt; na sam dół strony"
+
+#: inc/admin.php:247
+msgid ""
+"After enabling this option, plugin will be firing two actions "
+"(<strong>pp_google_analytics_head_before</strong>, "
+"<strong>pp_google_analytics_head_after</strong>) and will use one filter "
+"(<strong>pp_google_analytics_head_output</strong>) for output."
+msgstr ""
+"Po włączeniu tej opcji, wtyczka wywoła dwie akcje "
+"(<strong>pp_google_analytics_head_before</strong>, "
+"<strong>pp_google_analytics_head_after</strong>) oraz użyje filtra "
+"(<strong>pp_google_analytics_head_output</strong>) dla wstawianego kodu."
+
+#: inc/admin.php:259
+msgid "Add plugin name to the tracking code"
+msgstr "Dodaj nazwę wtyczki do wygenerowanego kodu"
+
+#: inc/plugin.php:80
+msgid "BEGIN: Added by Google Analytics Head plugin"
+msgstr "POCZĄTEK: Dodano za pomocą wtyczki Google Analytics Head"
+
+#: inc/plugin.php:121
+#, php-format
+msgid ""
+"Please remember to <a href=\"%s\">setup Google Tracking ID</a> in order to "
+"use Google Analytics Head plugin!"
+msgstr ""
+"Pamiętaj aby <a href=\"%s\">ustawić kod śledzący Google</a>, by móc używać "
+"wtyczki Google Analytics Head!"
+
+#: inc/plugin.php:141
+msgid "Settings"
+msgstr "Ustawienia"
+
+#~ msgid "<label for=\"google_id\">Google ID</label>"
+#~ msgstr "<label for=\"google_id\">Identyfikator Google</label>"
+
+#~ msgid ""
+#~ "You fill thankful? You may <a href=\"%s\">buy me a beer</a> if you wish :)"
+#~ msgstr ""
+#~ "Chcesz się odwdzięczyć? Możesz <a href=\"%s\">kupić mi piwo</a> jeśli "
+#~ "masz ochotę :)"
+
+#~ msgid ""
+#~ "Something like UA-XXXXXXXX-X, where UA-XXXXXXXX-X is your personal Google "
+#~ "Analytics code provided by Google."
+#~ msgstr ""
+#~ "Coś podobnego do UA-XXXXXXXX-X, gdzie UA-XXXXXXXX-X to twój identyfikator "
+#~ "dostarczony przez Google"
+
+#~ msgid "Analytics Head plugin options"
+#~ msgstr "Opcje wtyczki Analytics Head"
+
+#~ msgid "Hide in admin area"
+#~ msgstr "Ukryj w panelu administracyjnym"
+
+#~ msgid "Hide for logged users"
+#~ msgstr "Ukryj dla zalogowanych użytkowników"
+
+#~ msgid "Code in footer"
+#~ msgstr "Kod w stopce"
+
+#~ msgid "Something like UA-XXXXXXXX-X"
+#~ msgstr "Kod w formacie podobnym do UA-XXXXXXXX-X"
+
+#~ msgid "Added by Google Analytics Head plugin"
+#~ msgstr "Dodano przez wtyczkę Google Analytics Head"
+
+#~ msgid ""
+#~ "Please remember to <a href=\"%s\">setup Google Tracking ID</a> in order "
+#~ "to use Google Analytics Head plugin."
+#~ msgstr ""
+#~ "Pamiętaj aby wprowadzić <a href=\"%s\">kod śledzący Google</a> aby "
+#~ "wtyczka mogła działać."
+
+#~ msgid "Lukasz Nowicki"
+#~ msgstr "Łukasz Nowicki"
