@@ -2,10 +2,10 @@
 
 Tags: Google, Analytics, Script, Webmaster, Tools, Tracking, Code, Head, Header, Footer, Page, Section
 Requires at least: 4.0
-Tested up to: 4.7
+Tested up to: 5.4
 Contributors: lukasznowicki
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZUE7KNWHW3CJ4
-Stable tag: 1.6.0
+Donate link: https://paypal.me/lukasznowicki77
+Stable tag: 1.6.7
 
 This plugin adds tracking code for Google Analytics to your WordPress &lt;head&gt; section, so you can authorize your site in Google Webmaster Tools.
 
@@ -17,7 +17,7 @@ There are many Google Analytics plugins for WordPress. I used a few of those mys
 
 It turned out that I can authenticate the ownership of the website using my Google Analytics account. Where's the catch? Google Webmaster's Tools expects that the code will be located at the &lt;head&gt; section and all the plugs have placed it at the very end of the page (apart from this case - very rightly).
 
-Therefore, I created a plug-in called "Analytics Head", which places tracking code in the &lt;head&gt; section of the webpage. Of course you can put it in the footer at any moment, if you like.
+Therefore, I created a plug-in called "Analytics Head", which places tracking code in the &lt;head&gt; section of the web page. Of course you can put it in the footer at any moment, if you like.
 
 == Installation ==
 
@@ -57,6 +57,10 @@ Please note that those features are disabled by default. If you want to use them
 = Is it free? =
 Yes, it is under GPLv2 (and later) licence. However, you can donate me a few dollars if it makes you feel good. I certainly have nothing against it.
 
+== Screenshots ==
+
+1. Google Analytics Head options panel.
+
 == Examples ==
 
 Here are a few examples for developers
@@ -79,6 +83,45 @@ Here are a few examples for developers
 } );`
 
 == Changelog ==
+
+= 1.6.7 =
+* Release date: 2018-11-21
+* Status: Stable
+* Set compatibility tag
+
+= 1.6.6 =
+* Release date: 2018-11-21
+* Status: Stable
+* Compatibility: 5.0 and previous
+* Small code refactoring
+* Some typo fixes
+
+= 1.6.5 =
+* Release date: 2018-05-18
+* Status: Stable
+* Compatibility: 4.9.6 and previous
+
+= 1.6.4 =
+* Release date: 2018-05-05
+* Status: Stable
+* Compatibility: 4.9.5 and previous
+
+= 1.6.3 =
+* Release date: 2018-05-05
+* Status: Stable
+* Changed hardcoded Google Analytics code
+
+= 1.6.2 =
+* Release date: 2017-10-12
+* Status: Stable
+* Compatibility: 4.8.2 and previous
+* Added new Google Analytics code
+
+= 1.6.1 =
+* Release date: 2017-08-03
+* Status: Stable
+* Compatibility: 4.8.1 and previous
+* Updated some assets
 
 = 1.6.0 =
 * Release date: 2016-11-19
@@ -121,7 +164,7 @@ Here are a few examples for developers
 * Compatibility tested up with WordPress 4.6.1
 * This version is tested up with latest WordPress 4.6.1,
 * we changed donate link,
-* we get rid of previous riddiculs versioning,
+* we get rid of previous ridicules versioning,
 * fixed some typos and updated translation.
 
 = 1.4.4.1 =
@@ -202,4 +245,4 @@ Here are a few examples for developers
 
 = 0.1 =
 * Release date: 2011-04-08)
-* Status: Prealpha
+* Status: Pre-alpha

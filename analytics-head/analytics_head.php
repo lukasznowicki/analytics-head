@@ -5,7 +5,7 @@
  Description: This plugin adds tracking code for <strong>Google Analytics</strong> to your WordPress site. Unlike other plugins, code is added to the <i>&lt;head&gt;</i> section, so you can authorize your site in <strong>Google Webmaster Tools</strong>. Of course you can also move your tracking code into footer.
       Author: Lukasz Nowicki
   Author URI: http://lukasznowicki.info/
-     Version: 1.6.0
+     Version: 1.6.7
      License: GPLv2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain: analytics-head
@@ -16,10 +16,10 @@ namespace Phylax\WPPlugin\AnalyticsHead;
 
 /**
  * This is a plugin, it means it should not be run without WordPress environment.
- * WordPress deifnes ABSPATH so we may use it to determine if there is WP somewhere
+ * WordPress defines ABSPATH so we may use it to determine if there is WP somewhere
  * outside...
  */
-defined('ABSPATH') or die('Cheatin\', huh?');
+defined('ABSPATH') or die("Cheating, huh?");
 
 /**
  * Define a few constants for later use
@@ -49,7 +49,7 @@ require_once( PLUGIN_DIR . 'inc' . DIRECTORY_SEPARATOR . 'plugin.php' );
  * Let's take care of options and possibly installation...
  */
 $options = new Options();
-$install = new Install( $options );
+new Install( $options );
 
 /**
  * Let's see if user is in admin panel... We do not need to serve all
@@ -57,7 +57,7 @@ $install = new Install( $options );
  */
 if ( is_admin() ) {
 	require_once( PLUGIN_DIR . 'inc' . DIRECTORY_SEPARATOR . 'admin.php' );
-	$admin = new Admin( $options );
+	new Admin( $options );
 }
 
 /**

@@ -2,7 +2,7 @@
 
 This plugin adds tracking code for Google Analytics to your WordPress &lt;head> section, so you can authorize your site in Google Webmaster Tools.
 
-Current version: `1.6.0`
+Current version: `1.6.7`
 
 ## More informations
 
@@ -33,7 +33,7 @@ Please note that those features are disabled by default. If you want to use them
 * [Strony internetowe, aplikacje](https://phylax.pl/)
 
 ## License
-Copyright 2016 phylax.pl Łukasz Nowicki
+Copyright 2016-2020 phylax.pl Łukasz Nowicki
 <https://phylax.pl/>
 
 Licensed under the GPLv2 or later: <http://www.gnu.org/licenses/gpl-2.0.html>

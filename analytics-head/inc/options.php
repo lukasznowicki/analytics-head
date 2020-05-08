@@ -2,12 +2,13 @@
 /**
  * This is main installation file
  */
+
 namespace Phylax\WPPlugin\AnalyticsHead;
 
 /**
  * Make sure to run this file within WordPress environment and with our plugin only
  */
-( defined('ABSPATH') && defined( __NAMESPACE__ . '\PLUGIN_DIR' ) ) or die('Sorry, you cannot use me outside the WordPress environment.');
+( defined( 'ABSPATH' ) && defined( __NAMESPACE__ . '\PLUGIN_DIR' ) ) or die( 'Sorry, you cannot use me outside the WordPress environment.' );
 
 /**
  * This class will handle options manipulation.
@@ -25,13 +26,6 @@ class Options {
 	public $do_install = false;
 
 	/**
-	 * This method will simply reload options
-	 */
-	public function reload_options() {
-		$this->data = get_option( OPTION_NAME );
-	}
-
-	/**
 	 * This method will be executed every time options class is loaded
 	 */
 	public function __construct() {
@@ -45,16 +39,25 @@ class Options {
 			 * If we are, we will get it. If not, we will fill it with defaults, except
 			 * Google ID of course.
 			 */
-			 $this->do_install = true;
+			$this->do_install = true;
 		} else {
 			/**
 			 * We've got options on board! Let's see if those aren't current options
 			 */
-			 if ( isset( $current['version'] ) && ( $current['version'] < PLUGIN_VERSION ) ) {
-			 	$this->do_install = true;
-			 }
+			if ( isset( $current['version'] ) && ( $current['version'] < PLUGIN_VERSION ) ) {
+				$this->do_install = true;
+			}
 		}
-		if ( !$this->do_install ) { $this->data = $current; }
+		if ( ! $this->do_install ) {
+			$this->data = $current;
+		}
+	}
+
+	/**
+	 * This method will simply reload options
+	 */
+	public function reload_options() {
+		$this->data = get_option( OPTION_NAME );
 	}
 
 }
